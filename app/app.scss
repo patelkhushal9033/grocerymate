@@ -1,0 +1,192 @@
+// NativeScript core theme
+// @see https://docs.nativescript.org/ui/theme
+@import '~@nativescript/theme/core';
+@import '~@nativescript/theme/orange';
+
+// Override variables here
+
+// Global SCSS styling
+// @see https://docs.nativescript.org/ui/styling
+
+
+// colors 
+$primary: #D97D54;
+$sage: #87BCBF;
+$darb: #324755;
+$onyx: #1B1C20;
+$slate: #6E8CA0;
+$ice: #E2E2E2;
+$gray: #798186;
+$red: #DC493A;
+$green: #20BF55;
+$yellow: #F0A202;
+
+
+
+page {
+    background-color: #E2E2E2;
+    color: $darb;
+}
+
+ActionBar {
+    background-color: #D97D54;
+    color: #ffffff;
+}
+
+.title_heading {
+    padding-left: 20;
+    margin-top: 15;
+    margin-bottom: 15;
+    font-weight: 500;
+    font-size: 18%;
+}
+
+.priority-circle {
+    border-radius: 50%;
+    width: 15;
+    height: 15;
+    background-color: $ice;
+}
+
+.actionButton {
+    background-color: $primary;
+    color: white;
+    font-size: 18%;
+    padding: 20;
+    max-width: 60%;
+    border-radius: 13;
+    font-weight: 500;
+    margin-bottom: 10;
+}
+
+.high {
+    background-color: $red;
+}
+
+.medium {
+    background-color: $yellow;
+}
+
+.low {
+    background-color: $green;
+}
+
+
+//search bar
+.search_bar {
+    margin-left: 15;
+    margin-right: 15;
+    margin-top: 15;
+    border-radius: 13;
+    padding-left: 15;
+    box-shadow: 
+        -12px -12px 12px 0 rgba(255,255,255,1),
+        12px 12px 12px 0 rgba(0,0,0,.03);
+}
+
+// tab styling 
+.tab {
+    width: 50%;
+    background-color: white;
+    font-weight: 500;
+    opacity: 0.5;
+
+    .tab_image {
+        height: 38%;
+        width: 38%;    
+    } 
+
+    .tab_title {
+        font-size: 12%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+//add new item card
+.card_add_new_label {
+    text-align: center;
+    font-size: 17%;
+    background-color: white;
+    color: $darb;
+    border-radius: 13;
+}
+
+
+
+//item card styling 
+
+.card_layout {
+    margin-bottom: 18;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: white;
+    border-radius: 13;
+    box-shadow: 
+        -12px -12px 12px 0 rgba($color: #DC493A, $alpha: 1.0),
+        12px 12px 12px 0 rgba($color: #000000, $alpha: .03);
+
+    .card_label {
+        width: 62%;
+        padding-left: 15;
+        font-weight: 400;
+        font-size: 15%;
+        text-align: left;
+    }
+
+    .card_controls {
+        background-color: $darb;
+        width: 38%;
+        border-radius: 13;
+
+        .card_qty_layout {
+            width: 36%;
+        }
+
+        .card_qty_label {
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+            color: $ice;
+            font-size: 17%;        
+        }
+
+        .card_button_layout {
+            width: 32%;
+            height: 62;
+        }
+        .card_button {
+            width: 55%;
+            height: 55%;
+        }
+    }
+    
+}
+
+//checked card 
+.checked_card_layout {
+    margin-bottom: 18;
+    width: 28%;
+    height: 62;
+}
+
+// Shopping list card 
+.shoppingListCard{
+    width: 125;
+    background-color: $darb;
+    font-size: 15%;
+    padding: 10;
+    font-weight: 500;
+    color: white;
+    border-radius: 13;
+    text-align: center;
+    margin-bottom: 20;
+    margin-right: 10;
+
+}
+
+// Home Screen
+.homeStockWrapper {
+    border-top-right-radius: 20;
+    border-top-left-radius: 20;
+}
